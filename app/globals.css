@@ -1,28 +1,6 @@
 @import url("https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css");
 @import "tailwindcss";
 
-:root {
-  --bg: 248 250 252;
-  --fg: 15 23 42;
-  --card: 255 255 255;
-  --border: 226 232 240;
-}
-
-.dark {
-  --bg: 10 15 30;
-  --fg: 226 232 240;
-  --card: 15 23 42;
-  --border: 30 41 59;
-}
-
-html, body {
-  background: rgb(var(--bg));
-  color: rgb(var(--fg));
-  font-family: Vazirmatn, system-ui, sans-serif;
-  scroll-behavior: smooth;
-}
-
-/* ═══ رنگ‌های سفارشی برای استفاده در کلاس‌ها ═══ */
 @theme {
   --color-ocean-50: #eef9ff;
   --color-ocean-100: #d9f0ff;
@@ -43,6 +21,27 @@ html, body {
   --color-eco-400: #4ade80;
   --color-eco-500: #22c55e;
   --color-eco-600: #16a34a;
+}
+
+:root {
+  --bg: 248 250 252;
+  --fg: 15 23 42;
+  --card: 255 255 255;
+  --border: 226 232 240;
+}
+
+.dark {
+  --bg: 10 15 30;
+  --fg: 226 232 240;
+  --card: 15 23 42;
+  --border: 30 41 59;
+}
+
+html, body {
+  background: rgb(var(--bg));
+  color: rgb(var(--fg));
+  font-family: Vazirmatn, system-ui, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .glass {
