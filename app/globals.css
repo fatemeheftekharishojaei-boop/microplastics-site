@@ -1,0 +1,76 @@
+@import url("https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css");
+@import "tailwindcss";
+
+:root {
+  --bg: 248 250 252;
+  --fg: 15 23 42;
+  --card: 255 255 255;
+  --border: 226 232 240;
+}
+
+.dark {
+  --bg: 10 15 30;
+  --fg: 226 232 240;
+  --card: 15 23 42;
+  --border: 30 41 59;
+}
+
+html, body {
+  background: rgb(var(--bg));
+  color: rgb(var(--fg));
+  font-family: Vazirmatn, system-ui, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ═══ رنگ‌های سفارشی برای استفاده در کلاس‌ها ═══ */
+@theme {
+  --color-ocean-50: #eef9ff;
+  --color-ocean-100: #d9f0ff;
+  --color-ocean-200: #bce6ff;
+  --color-ocean-300: #8ed7ff;
+  --color-ocean-400: #59bfff;
+  --color-ocean-500: #339fff;
+  --color-ocean-600: #1b7ff5;
+  --color-ocean-700: #1468e1;
+  --color-ocean-800: #1755b6;
+  --color-ocean-900: #194a8f;
+  --color-ocean-950: #0a1e3f;
+
+  --color-turquoise-400: #2dd4bf;
+  --color-turquoise-500: #14b8a6;
+  --color-turquoise-600: #0d9488;
+
+  --color-eco-400: #4ade80;
+  --color-eco-500: #22c55e;
+  --color-eco-600: #16a34a;
+}
+
+.glass {
+  background: color-mix(in srgb, rgb(var(--card)) 70%, transparent);
+  backdrop-filter: blur(14px) saturate(160%);
+  border: 1px solid color-mix(in srgb, rgb(var(--border)) 90%, transparent);
+}
+
+.gradient-ocean {
+  background: linear-gradient(135deg, #0a1e3f 0%, #1468e1 45%, #14b8a6 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #14b8a6, #339fff, #14b8a6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+::selection {
+  background: #14b8a6;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#339fff, #14b8a6);
+  border-radius: 8px;
+}
